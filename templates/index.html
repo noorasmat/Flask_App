@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- to be filled by the Python script -->
+<h1>{{ the_title }}</h1>
+
+<!-- note how items from the "static" folder are linked -->
+<img alt="Photo: Bengal Tiger" src="{{ url_for('static', filename='images/1.png') }}">
+<p class="credit">Photo by Imane El Khalfi <a href="https://www.linkedin.com/pulse/generative-ai-dummies-what-you-need-know-imane-el-khalfi-2blqe/" target="_blank">via LinkedIn</a></p>
+
+<p>This is the index page for my example Flask app.</p>
+
+<ul>
+  <!-- note how items from routes in the the Python script are linked -->
+  <li><a href="{{ url_for('myth') }}">GenAI for Images</a></li>
+  <li><a href="{{ url_for('symbol') }}">GenAI for Text</a></li>
+</ul>
+
+Generative AI is a transformative technology that enables the creation of new content, such as text, images, audio, and video, by learning from existing data. This type of AI is built on advanced models like Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Transformers, which are trained on large datasets to understand underlying patterns and generate novel outputs. It has wide-ranging applications across industries, from automating content creation in media and marketing to designing synthetic medical data and generating art, music, and virtual worlds. However, the power of generative AI also brings significant ethical challenges, including concerns about misinformation, deepfakes, and the potential for biased or infringing content. As the technology continues to evolve, its integration with other emerging fields like augmented and virtual reality promises to revolutionize digital experiences, making responsible development and usage crucial to maximizing its benefits while minimizing its risks.
+
+
+{% endblock %}

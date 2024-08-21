@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>{{ the_title }}</h1>
+
+<img alt="Photo: Flag of Naam Tamilar" src="{{ url_for('static', filename='images/2.PNG') }}">
+<p class="credit">Flag of the <a href="http://www.naamtamilar.org/" target="_blank">Naam Tamilar</a> political party, India (2010)</p>
+
+<ul>
+  <li><a href="{{ url_for('myth') }}">GenAI for Images</a></li>
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+Generative AI for text utilizes powerful models like Transformers, particularly those based on architectures like GPT (Generative Pre-trained Transformer), to create coherent and contextually relevant written content. These models are trained on extensive datasets, learning the nuances of language, grammar, and context, enabling them to generate everything from simple text completions to complex articles, stories, and dialogue. Applications are widespread, including automating content creation for blogs and social media, generating realistic chatbots, assisting in creative writing, and even translating or summarizing text. The ability of generative AI to produce human-like text has revolutionized natural language processing, making it a valuable tool across various industries. However, it also presents challenges, such as ensuring the generated content is accurate, unbiased, and used ethically, particularly in contexts where the distinction between human and AI-generated text is critical.
+{% endblock %}

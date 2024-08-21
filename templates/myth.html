@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>{{ the_title }}</h1>
+
+<img alt="Painting: Goddess Durga on a tiger's back" src="{{ url_for('static', filename='images/3.PNG') }}">
+<p class="credit">Early 18th century picture of the Guler School [Public domain] <a href="https://commons.wikimedia.org/wiki/File%3ADurga_Mahisasuramardini.JPG" target="_blank">via Wikimedia Commons</a></p>
+
+<ul>
+  <li><a href="{{ url_for('symbol') }}">GenAI for Text</a></li>
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+Generative AI for imaging leverages advanced models, such as Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and diffusion models, to create new images that can closely mimic real-world visuals or produce entirely original designs. These models are trained on vast datasets of images, learning intricate patterns, textures, and structures to generate realistic or stylized visual content. Applications of generative AI in imaging are diverse, ranging from art and design, where it helps artists explore new creative avenues, to practical uses like enhancing image resolution, generating synthetic training data for machine learning, and even creating deepfakes. While this technology offers significant potential in creative industries and beyond, it also raises ethical concerns, particularly regarding the authenticity of generated images and the potential misuse of such technology in spreading misinformation.
+{% endblock %}
